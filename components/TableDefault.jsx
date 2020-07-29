@@ -10,10 +10,9 @@ export default function TableDefault(props) {
         if(Array.isArray(data)) {
             return (
                 data.map((link, index) => (
-                    <a href={link.href} className="mx-auto lg:mx-0 hover:bg-green-800 bg-green-500 text-white font-bold rounded-full my-1 py-2 px-2 shadow-lg">
+                    <a key={`btn-order-${index}`} href={link.href} className="mx-auto lg:mx-0 hover:bg-green-800 bg-green-500 text-white font-bold rounded-full my-1 py-2 px-2 shadow-lg">
                         <FontAwesomeIcon icon={faCartPlus} /> {link.title ?? 'Buy Now'}
                     </a>
-                    
                 ))
             )
         } else {
@@ -39,8 +38,8 @@ export default function TableDefault(props) {
                     {
                         products.map((product, index) => {
                             return (
-                                <div key={`product-${index}`} id={`product-${index}`} className={`flex flex-col w-5/6 mx-auto lg:mx-0 ${product.featured == true ? 'lg:w-1/4 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10' : 'lg:w-1/4 rounded-none lg:rounded-l-lg bg-white mt-4'}`}>
-                                    <div className={`flex-none bg-white rounded-t rounded-b-none overflow-hidden shadow ${product.featured == true ? '' : 'text-gray-700'}`}>
+                                <div key={`product-${index}`} id={`product-${index}`} className={`flex flex-col w-5/6 mx-auto lg:mx-0 lg:w-1/4 ${product.featured == true ? 'rounded-lg bg-white mt-4 z-10' : 'rounded-none lg:rounded-l-lg bg-white mt-4'}`}>
+                                    <div className={`bg-white rounded-t rounded-b-none overflow-hidden shadow ${product.featured == true ? '' : 'text-gray-700'}`}>
 
                                         <div className={`text-xl ${product.featured == true ? 'w-full md:text-3xl gradient text-white' : 'bg-gray-500 md:text-2xl'} shadow font-bold text-center`}>{product.name}</div>
 
@@ -56,7 +55,7 @@ export default function TableDefault(props) {
                                             }
                                         </ul>
                                     </div>
-                                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow py-4">
+                                    <div className="bg-white rounded-b rounded-t-none overflow-hidden shadow-lg py-4">
                                         <div className="flex flex-col items-center justify-center">
                                             {isArrayOrder(product.link)}
                                         </div>
