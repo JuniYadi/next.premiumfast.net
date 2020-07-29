@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 export default function TableDefault(props) {
-    const title = props.title ?? 'Harga Langganan'
+    const title = props.title ?? 'Biaya Langganan'
     const products = props.products
 
     // Check if Link is Array or Not
