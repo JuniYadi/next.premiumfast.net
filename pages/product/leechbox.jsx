@@ -6,7 +6,7 @@ import Featured from '../../components/Featured'
 import FAQ from '../../components/FAQ'
 import { Website } from '../../config/Website'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faServer } from '@fortawesome/free-solid-svg-icons'
+import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function WhatsappGateway() {
 
@@ -187,7 +187,7 @@ export default function WhatsappGateway() {
 
             <Layouts>
                 <HeadContent
-                    title={((<><FontAwesomeIcon icon={faServer} /> {head.title}</>))}
+                    title={((<><FontAwesomeIcon icon={faCloudDownloadAlt} /> {head.title}</>))}
                     description={head.description}
                     imageSvg={head.imageSvg}
                 >
