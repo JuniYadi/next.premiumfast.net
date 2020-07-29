@@ -29,7 +29,7 @@ export default function WhatsappGateway() {
             link: `${Website.clientarea}/cart.php?a=add&pid=173`,
             description: [
                 '1 Private Nomor Whatsapp',
-                '2500 Quota Pesan',
+                '2500 Quota Pesan/Bulan',
                 'Addons Quota Pesan',
                 'Kirim/Terima Pesan Text',
                 'Maksimal 25.000 Kontak HP',
@@ -54,7 +54,7 @@ export default function WhatsappGateway() {
             description: [
                 '1 Private Nomor Whatsapp',
                 '3 Nomor Whatsapp Cadangan',
-                '5000 Quota Pesan',
+                '5000 Quota Pesan/Bulan',
                 'Addons Quota Pesan',
                 'Kirim/Terima Pesan Text',
                 'Maksimal 25.000 Kontak HP',
@@ -79,7 +79,7 @@ export default function WhatsappGateway() {
             description: [
                 '1 Private Nomor Whatsapp',
                 '5 Nomor Whatsapp Cadangan',
-                '10000 Quota Pesan',
+                '10000 Quota Pesan/Bulan',
                 'Addons Quota Pesan',
                 'Kirim/Terima Pesan Text',
                 'Maksimal 25.000 Kontak HP',
@@ -109,7 +109,7 @@ export default function WhatsappGateway() {
             description: [
                 '1 Private Nomor Whatsapp',
                 '10 Nomor Whatsapp Cadangan',
-                '20000 Quota Pesan',
+                '20000 Quota Pesan/Bulan',
                 'Addons Quota Pesan',
                 'Kirim/Terima Pesan Text',
                 'Maksimal 25.000 Kontak HP',
