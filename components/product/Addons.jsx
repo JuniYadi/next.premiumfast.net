@@ -14,13 +14,13 @@ export default function Addons(props) {
                     <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-center">
+                <div className="flex flex-wrap justify-center">
 
                     {
                         lists.map((list, index) => (
-                            <div key={`featurelist-${index}`} id={`featurelist-${index}`} className="w-full sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 shadow-md my-2 mx-auto lg:mx-0">
+                            <div key={`featurelist-${index}`} id={`featurelist-${index}`} className="w-full sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 shadow-md my-2 mx-auto lg:px-2">
                                 <div className="text-center text-sm text-black rounded-md">
-                                    <div className="gradient text-lg text-white">
+                                    <div className="gradient text-md text-white">
                                         {list.name}
                                     </div>
                                     <p className="text-xl font-bold my-4">{list.price}</p>
