@@ -38,11 +38,11 @@ export default function TableDefault(props) {
                     {
                         products.map((product, index) => {
                             return (
-                                <div key={`product-${index}`} id={`product-${index}`} className={`mx-auto lg:mx-0 w-full sm:w-1/1 md:w-1/2 lg:w-1/4 xl:w-1/4 ${product.featured == true ? 'rounded-lg z-10' : 'rounded-none lg:rounded-l-lg mt-2'} bg-white`}>
+                                <div key={`product-${index}`} id={`product-${index}`} className={`mx-auto lg:mx-0 w-full sm:w-1/1 md:w-1/2 lg:w-1/4 xl:w-1/4 ${product.featured == true ? 'rounded-lg z-10' : 'rounded-none lg:rounded-l-lg my-2'} bg-white px-2`}>
 
                                     <div className={`bg-white rounded-t rounded-b-none overflow-hidden shadow ${product.featured == true ? '' : 'text-gray-700'}`}>
 
-                                        <div className={`text-xl ${product.featured == true ? 'w-full md:text-3xl gradient text-white' : 'bg-gray-500 md:text-2xl'} shadow font-bold text-center mx-2`}>{product.name}</div>
+                                        <div className={`text-xl ${product.featured == true ? 'w-full md:text-3xl gradient text-white' : 'bg-gray-500 md:text-2xl'} shadow font-bold text-center`}>{product.name}</div>
 
                                         <div className={`border-b-4 ${product.featured == true ? 'text-4xl font-bold text-center' : 'text-2xl text-gray-600 font-bold text-center'}`}>{product.price}<span className="text-base">{product.duration}</span></div>
 
