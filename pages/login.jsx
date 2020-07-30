@@ -41,13 +41,13 @@ export default function Home() {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                     Username
                                 </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="youremail@johndoe.com" />
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" name="username" placeholder="youremail@johndoe.com" />
                             </div>
                             <div className="mb-6">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="password">
                                     Password
                                 </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password" />
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" name="password" placeholder="Password" />
                             </div>
                             <div className="flex items-center justify-between">
                                 <input type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" name="submit" id="submit" value="Sign In"/>
