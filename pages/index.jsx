@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layouts from '../components/Layouts'
 import Whyus from '../components/Whyus'
 import HeadContent from '../components/HeadContent'
@@ -17,18 +18,6 @@ export default function Home() {
     imageSvg: '/img/undraw_business_shop.svg'
   }
 
-  function onClickRegister(e) {
-    e.preventDefault();
-
-    window.location.href = `${Website.clientarea}/register.php`
-  }
-
-  function onClickLogin(e) {
-    e.preventDefault();
-
-    window.location.href = `${Website.clientarea}/login.php`
-  }
-
   return (
     <>
       <HeadTitle customHead={head} />
@@ -39,15 +28,17 @@ export default function Home() {
           description={head.description}
           imageSvg={head.imageSvg}
         >
-          <div>
-            <button onClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold py-2 px-4 rounded-full mx-2 my-2">
+          {/* <div className="my-4 mx-4">
+            <a href={`${Website.clientarea}/register.php`} className="bg-white text-gray-800 hover:bg-green-800 hover:text-white font-bold py-2 px-4 rounded-full mx-2 my-2">
               <FontAwesomeIcon icon={faUserEdit} /> Register
-            </button>
+            </a>
 
-            <button onClick={onClickLogin} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold py-2 px-4 rounded-full mx-2 my-2">
-              <FontAwesomeIcon icon={faSignInAlt} /> Login
-            </button>
-          </div>
+            <Link href="/login">
+              <a className="bg-white text-gray-800 hover:bg-green-800 hover:text-white font-bold py-2 px-4 rounded-full mx-2 my-2">
+                <FontAwesomeIcon icon={faSignInAlt} /> Login
+              </a>
+            </Link>
+          </div> */}
         </HeadContent>
 
         <Whyus />
