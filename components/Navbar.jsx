@@ -166,13 +166,15 @@ function Navbar({ router }) {
                         }
                     </ul>
 
-                    <a
-                        id="navAction"
-                        href="https://manage.premiumfast.net/clientarea.php"
-                        className="mx-auto lg:mx-0 hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow"
-                    >
-                        <FontAwesomeIcon icon={faHouseUser} /> Client Area
-                    </a>
+                    <Link href="/login">
+                        <a
+                            id="navAction"
+                            className="mx-auto lg:mx-0 hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow"
+                        >
+                            <FontAwesomeIcon icon={faHouseUser} /> Client Area
+                        </a>
+                    </Link>
+                    
                     
                 </div>
             </div>
