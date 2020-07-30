@@ -1,9 +1,10 @@
 import Layouts from '../../components/Layouts'
 import HeadContent from '../../components/HeadContent'
 import HeadTitle from '../../components/HeadTitle'
-import TableDefault from '../../components/TableDefault'
-import Featured from '../../components/Featured'
-import FAQ from '../../components/FAQ'
+import TableDefault from '../../components/product/TableDefault'
+import Addons from '../../components/product/Addons'
+import Featured from '../../components/product/Featured'
+import FAQ from '../../components/product/FAQ'
 import { Website } from '../../config/Website'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -137,6 +138,45 @@ export default function WhatsappGateway() {
         }
     ];
 
+    const addons = [
+        {
+            name: 'Ganti Nomor (1x)',
+            description: 'Biaya ganti nomor terblokir, jika tidak ada gratis quota pergantian',
+            price: 'Rp. 25.000',
+            link: `${Website.clientarea}/cart.php?gid=addons`,
+        },
+        {
+            name: 'Quota Pesan 5.000',
+            description: 'Quota tambahan jika quota habis tanpa merubah masa aktif produk',
+            price: 'Rp. 75.000',
+            link: `${Website.clientarea}/cart.php?gid=addons`,
+        },
+        {
+            name: 'Quota Pesan 10.000',
+            description: 'Quota tambahan jika quota habis tanpa merubah masa aktif produk',
+            price: 'Rp. 150.000',
+            link: `${Website.clientarea}/cart.php?gid=addons`,
+        },
+        {
+            name: 'Quota Pesan 20.000',
+            description: 'Quota tambahan jika quota habis tanpa merubah masa aktif produk',
+            price: 'Rp. 300.000',
+            link: `${Website.clientarea}/cart.php?gid=addons`,
+        },
+        {
+            name: 'Quota Pesan 30.000',
+            description: 'Quota tambahan jika quota habis tanpa merubah masa aktif produk',
+            price: 'Rp. 450.000',
+            link: `${Website.clientarea}/cart.php?gid=addons`,
+        },
+        {
+            name: 'Quota Pesan +++',
+            description: 'Butuh quota pesan lebih besar? Hubungi kami untuk diskusi sesuai kebutuhan anda',
+            price: 'Hubungi Support',
+            link: `${Website.clientarea}/contact.php`,
+        }
+    ]
+
     const featuredLists = [
         {
             name: 'Nama dan Foto Profile',
@@ -260,6 +300,10 @@ export default function WhatsappGateway() {
         {
             "title": "Apakah Data Nomor atau Pesan Saya Aman?",
             "description": "Premium Fast Network sebagai penyedia layanan, hanya sebagai penyedia, kami tidak pernah meng-utak-atik data pelanggan dsb. Kami sangat menjaga dan menghargai privasi pelanggan.\n\nSemua data tersebut bisa anda hapus kapan saja, atau ketika anda berhenti berlangganan, semua data anda akan kami hapus permanent pada system WAGateway Kami."
+        },
+        {
+            "title": "Apa itu Addons Product?",
+            "description": "Addons Product atau Produk Tambahan adalah opsi yang bisa anda pilih khusus untuk mengganti nomor atau menambah quota pesan anda, misalnya anda berlangganan pada tanggal 1, tetapi kuota anda habis pada tanggal 10, anda bisa order addons quota pesan untuk menambah quota anda dengan biaya lebih murah."
         }
     ]
 
@@ -276,6 +320,8 @@ export default function WhatsappGateway() {
                 </HeadContent>
 
                 <TableDefault products={products} />
+
+                <Addons lists={addons} />
 
                 <Featured lists={featuredLists} />
 

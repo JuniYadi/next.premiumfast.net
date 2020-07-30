@@ -1,5 +1,5 @@
 import Layouts from '../components/Layouts'
-import Whyus from '../components/Whyus'
+import Whyus from '../components/product/Whyus'
 import HeadContent from '../components/HeadContent'
 import HeadTitle from '../components/HeadTitle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

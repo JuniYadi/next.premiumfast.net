@@ -1,9 +1,8 @@
 import Layouts from '../components/Layouts'
-import Whyus from '../components/Whyus'
 import HeadContent from '../components/HeadContent'
 import HeadTitle from '../components/HeadTitle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserEdit, faSignInAlt, faUserSecret, faUserShield } from '@fortawesome/free-solid-svg-icons'
+import { faUserShield } from '@fortawesome/free-solid-svg-icons'
 import { Website } from '../config/Website'
 
 export default function Home() {
@@ -30,12 +29,12 @@ export default function Home() {
         </HeadContent>
 
         <section className="bg-white border-b py-8">
-            <div className="container max-w-5xl mx-auto m-8">
+            <div className="container max-w-5xl mx-auto">
                 <div className="flex flex-col md:flex-row">
-                    <div className="w-full w-1/1 md:w-1/2 mx-6 my-6 px-4 shadown-md rounded-full">
+                    <div className="w-full w-1/1 md:w-1/2 mx-auto lg:mx-6 my-6 px-4 shadown-md rounded-full">
                         <img src="/img/undraw_secure_login.svg" alt="Login"/>
                     </div>
-                    <div className="w-full w-1/1 md:w-1/2 mx-6 my-6 px-4 shadown-md rounded-full">
+                    <div className="w-full w-1/1 md:w-1/2 mx-auto lg:mx-6 my-6 px-4 shadown-md rounded-full">
                         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action={`${Website.clientarea}/dologin.php`}>
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
