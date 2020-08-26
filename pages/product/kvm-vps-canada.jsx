@@ -1,27 +1,28 @@
-import Layouts from '../../components/Layouts'
-import HeadContent from '../../components/HeadContent'
-import HeadTitle from '../../components/HeadTitle'
-import TableDefault from '../../components/product/TableDefault'
-import FeaturedKVMVPS from '../../components/product/FeaturedKVMVPS'
-import OperatingSystem from '../../components/product/OperatingSystem'
-import { Website } from '../../config/Website'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faServer } from '@fortawesome/free-solid-svg-icons'
+import Layouts from '../../components/Layouts';
+import HeadContent from '../../components/HeadContent';
+import HeadTitle from '../../components/HeadTitle';
+import TableDefault from '../../components/product/TableDefault';
+import FeaturedKVMVPS from '../../components/product/FeaturedKVMVPS';
+import OperatingSystem from '../../components/product/OperatingSystem';
+import { Website } from '../../config/Website';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faServer } from '@fortawesome/free-solid-svg-icons';
 
 export default function KvmVPSCanada() {
-
     // Head Data
     const head = {
         title: 'KVM VPS Canada',
-        description: 'KVM VPS Canada adalah salah satu produk KVM VPS menggunakan Disk SSD yang sangat cepat untuk memproses data pada server di bandingkan dengan HDD biasa pada umumnya.',
-        keywords: 'KVM VPS Canada, KVM VPS Canada SSD, KVM VPS Windows, VPS Windows, KVM VPS, Canada SSD, VPS Canada Windows',
+        description:
+            'KVM VPS Canada adalah salah satu produk KVM VPS menggunakan Disk SSD yang sangat cepat untuk memproses data pada server di bandingkan dengan HDD biasa pada umumnya.',
+        keywords:
+            'KVM VPS Canada, KVM VPS Canada SSD, KVM VPS Windows, VPS Windows, KVM VPS, Canada SSD, VPS Canada Windows',
         image: '/img/png/undraw_connected_world.png',
-        imageSvg: '/img/undraw_connected_world.svg'
-    }
+        imageSvg: '/img/undraw_connected_world.svg',
+    };
 
     // Products Data
     const products = [
-        { 
+        {
             name: 'CA-SSD-2',
             price: 'Rp. 100k',
             duration: '/bulan',
@@ -34,9 +35,10 @@ export default function KvmVPSCanada() {
                 '1 IPv4',
                 'Unlimited Bandwidth',
                 'Full Administrator/root',
-            ]
+                'Location: Canada',
+            ],
         },
-        { 
+        {
             name: 'CA-SSD-4',
             price: 'Rp. 200k',
             duration: '/bulan',
@@ -49,9 +51,10 @@ export default function KvmVPSCanada() {
                 '1 IPv4',
                 'Unlimited Bandwidth',
                 'Full Administrator/root',
-            ]
+                'Location: Canada',
+            ],
         },
-        { 
+        {
             name: 'CA-SSD-8',
             price: 'Rp. 400k',
             duration: '/bulan',
@@ -64,9 +67,10 @@ export default function KvmVPSCanada() {
                 '1 IPv4',
                 'Unlimited Bandwidth',
                 'Full Administrator/root',
-            ]
+                'Location: Canada',
+            ],
         },
-        { 
+        {
             name: 'CA-SSD-16',
             price: 'Rp. 800k',
             duration: '/bulan',
@@ -79,8 +83,9 @@ export default function KvmVPSCanada() {
                 '1 IPv4',
                 'Unlimited Bandwidth',
                 'Full Administrator/root',
-            ]
-        }
+                'Location: Canada',
+            ],
+        },
     ];
 
     return (
@@ -89,18 +94,20 @@ export default function KvmVPSCanada() {
 
             <Layouts>
                 <HeadContent
-                    title={((<><FontAwesomeIcon icon={faServer} /> {head.title}</>))}
+                    title={
+                        <>
+                            <FontAwesomeIcon icon={faServer} /> {head.title}
+                        </>
+                    }
                     description={head.description}
                     imageSvg={head.imageSvg}
-                >
-                </HeadContent>
+                ></HeadContent>
 
                 <TableDefault products={products} />
 
                 <FeaturedKVMVPS />
                 <OperatingSystem />
-
             </Layouts>
         </>
-    )
+    );
 }
